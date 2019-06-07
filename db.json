@@ -1,6 +1,48 @@
 {
-    "profile": {
-        "name": "Testerko Testerovic",
-        "id": 1
-    }
+    "scoreList": [
+        {
+            "username": "Testerko Testerovic",
+            "score": 500
+        },
+        {
+            "username": "Test",
+            "score": 700
+        },
+        {
+            "username": "Anonimus",
+            "score": 320
+        },
+        {
+            "username": "Anonimus2",
+            "score": 323
+        },
+        {
+            "username": "Anonimus3",
+            "score": 999
+        },
+        {
+            "username": "Anonimus4",
+            "score": 11
+        },
+        {
+            "username": "Anonimus5",
+            "score": 32
+        },
+        {
+            "username": "Anonimus6",
+            "score": 55
+        },
+        {
+            "username": "Testerko Testerovic",
+            "score": 499
+        },
+        {
+            "username": "Testerko Testerovic",
+            "score": 498
+        },
+        {
+            "username": "Testerko Testerovic",
+            "score": 497
+        }
+    ]
 }
