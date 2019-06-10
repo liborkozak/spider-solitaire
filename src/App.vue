@@ -1,6 +1,6 @@
 <template>
   <v-app id="app">
-      <router-view/>
+    <router-view/>
   </v-app>
 </template>
 
@@ -11,5 +11,6 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background-image: url("/game-background.jpg");
 }
 </style>

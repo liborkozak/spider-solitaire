@@ -1,7 +1,7 @@
 <template>
   <v-data-table :pagination.sync="pagination" hide-actions :headers="headers" :items="listItems">
     <template v-slot:items="props">
-      <td class="text-xs-left">{{ props.item.name }}</td>
+      <td class="text-xs-left">{{ props.item.username }}</td>
       <td class="text-xs-left">{{ props.item.score }}</td>
     </template>
   </v-data-table>
@@ -17,14 +17,14 @@ export default {
     return {
       headers: [
         {
-          text: 'Name',
+          text: "Name",
           sortable: false,
-          value: 'name'
+          value: "username"
         },
         {
-          text: 'Score',
+          text: "Score",
           sortable: false,
-          value: 'score'
+          value: "score"
         }
       ],
       listItems: [],
@@ -38,12 +38,12 @@ export default {
   },
   methods: {
     getListItems() {
-      let url = '/scoreList?_sort=score&_order=desc&';
+      let url = "/scoreList?_sort=score&_order=desc&";
       if (this.personal) {
         let username = encodeURIComponent(this.$route.params.username);
-        url += 'name=' + username;
+        url += "username=" + username;
       } else {
-        url += '_limit=10';
+        url += "_limit=10";
       }
       this.$http.get(url).then(this.setListItems.bind(this));
     },
